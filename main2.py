@@ -10,6 +10,9 @@ class Repo:
     @abc.abstractmethod
     def get(self):
         pass
+    
+    def test(self):
+        return 'test'
 
 
 class SQLRepo(Repo):
@@ -30,7 +33,7 @@ if __name__ == '__main__':
 
     # Bind `Impl` class to `Interface` class
     provider.bind(Repo, SQLRepo)
-    provider.bind(Usecase, SQLRepo)
+    provider.bind(Usecase, Repo)
 
     # Inject with configure
     configure(provider=provider)

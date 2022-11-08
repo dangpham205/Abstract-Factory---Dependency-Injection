@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from department_service import DepartmentService
+from repos import DepartmentService
 from provider import init_di
 
 
@@ -26,6 +26,7 @@ if __name__ == '__main__':
     print(obj.t())
     
     init_di()
+    
     service = DepartmentService()
     data = service.dep_repo.get_all()
     print(data)

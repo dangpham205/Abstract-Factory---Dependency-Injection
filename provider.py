@@ -1,7 +1,7 @@
 from pythondi import Provider, configure
 
-from department_contract import DepartmentContract
-from department_repository import DepartmentRepository
+from repos import DepartmentContract
+from repos import DepartmentRepository
 
 
 def init_di():

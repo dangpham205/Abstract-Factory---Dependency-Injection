@@ -1,4 +1,4 @@
-from department_contract import DepartmentContract
+from repos.department_contract import DepartmentContract
 from sqlalchemy_abstract import SqlAchemyAbstract
 from classes.department import Department
 
